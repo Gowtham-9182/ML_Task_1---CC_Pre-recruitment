@@ -72,7 +72,7 @@ def cleaning_data(df):
     df["Ticket_Price"] = df["Ticket_Price"].fillna(df["Ticket_Price"].median())
 
     ############################################################################### Cleaning Date and Time
-
+   
     time_cat = []
 
     for val in df["Show_DateTime"]:
@@ -123,6 +123,8 @@ def cleaning_data(df):
         time_cat.append(category)
     
     df["Show_DateTime"] = time_cat
+
+    ## The above code was made taken help with ai.
 
 
     return df  
